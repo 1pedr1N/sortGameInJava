@@ -51,9 +51,12 @@ public class JogoBotao extends JFrame {
                             if (valor == index + 1) {
                                 index++;
                                 if (index == 4) {
-                                    JOptionPane.showMessageDialog(null, "ganhou
+                                    JOptionPane.showMessageDialog(null, "Acertou");
                                     reiniciarJogo();
                                 }
+                            } else {
+                                // Se o valor não estiver correto, não revelar o botão
+                                botaoClicado.setText("?");
                             }
                         }
                     }
